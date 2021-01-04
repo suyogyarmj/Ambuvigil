@@ -1,0 +1,233 @@
+
+<html>
+<head>
+<title> Ambuvigil</title>
+<style>
+ * {
+ box-sizing: border-box;
+ }
+ body {
+ margin: 0;
+ }
+ .header {
+ background-color: #f1f1f1;
+ padding:20px;
+ text-align: center;
+ }
+ .topnav {
+ overflow: hidden;
+ background-color:#333;
+ }
+ .topnav a {
+ float: center;
+ display:inline-block;
+ color: deepskyblue;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ }
+ .topnav a:hover {
+ background-color:lightpink;
+ color: black;
+ }
+ .grid-container {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding:10px;
+ }
+ .grid-item {
+ background-color:bisque;
+ border:none;
+ padding: 20px;
+ font-size: 15px;
+ font-family:Arial, Helvetica, serif;
+ text-align: center;
+ }
+ .description-container {
+ display: grid;
+ grid-template-columns: center auto auto;
+ padding:10px;
+ }
+ .description {
+ background-color: lightpink;
+ color:black;
+ paddding: 15px;
+ text-align: center;
+ border:none;
+ 
+ }
+ * {
+ box-sizing: border-box;
+}
+input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ resize: vertical;
+}
+label {
+ padding: 12px 12px 12px 0;
+ display: inline-block;
+}
+input[type=submit] {
+ background-color: #4CAF50;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ float: right;
+}
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+.form-container {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+.col1 {
+ float: left;
+ width: 25%;
+ margin-top: 6px;
+}
+.col2 {
+ float: left;
+ width: 75%;
+ margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .col1, .col2, input[type=submit] {
+ width: 100%;
+ margin-top: 0;
+ }
+}
+.FootCol {
+ float: left;
+ width: 50%;
+ padding: 15px;
+ background-color:#ccc;
+}
+.FootRow:after {
+ content: "";
+ display:table;
+ clear:both;
+}
+.mapouter{text-align:right;height:320px;width:650px;}.gmap_canvas {overflow:none;background:none!important;height:320px;width:650px;}
+}
+ </head> 
+ </style>
+ <body>
+ 
+ <div class ="header">
+ <h1>Ambuvigil</h1>
+ </div>
+ 
+ <div class = "topnav">
+ <a href="http://localhost:8383/HackAThon/AboutUS.html">About Us</a>
+ <a href ="#mission">Mission Statement </a>
+ <a href ="#boroughs">Boroughs </a>
+ <a href ="#forms">Submit Info </a>
+ <a href="#map">Map</a>
+ </div>
+ <div class ="description-container" id ="mission">
+ <div class ="description">
+ <h2> Our Mission </h2>
+ <p>Hey this is the description of our website. Blaaah</p> 
+ </div>
+ 
+ </div>
+ 
+ <div class="grid-container" id ="boroughs">
+ 
+ <div class="grid-item"><h3>Brooklyn</h3><p>Hey guys this is Brooklyn</p></div> 
+ <div class="grid-item"><h3>Queens</h3><p> Hey guys this is Queens</p></div> 
+ <div class="grid-item"><h3>Manhattan</h3><p>Hey guys this is Manhattan</p></div> 
+ <div class="grid-item"><h3>Bronx</h3><p></p>Hey guys this is the Bronx</div> 
+ <div class="grid-item"><h3>Staten Island</h3><p>Hey guys this is Staten Island</p></div> 
+ <div class="grid-item"><h3>Other</h3><p>Hey Guys this is other</p></div> 
+ </div>
+ <div class ="form-container" id="forms">
+ <div class =" row">
+ <div class="col1">
+ <label for ="fname"> First Name</label>
+ </div>
+ <div class ="col2">
+ <input type ="text" id="fname" name =" firstname" placeholder="Enter Your First Name">
+ </div>
+ </div>
+ <div class ="row">
+ <div class ="col1">
+ <label for ="lname">Last Name</label>
+ </div>
+ <div class ="col2" >
+ <input type ="text" id="lname" name="lastname" placeholder="Enter Your Last Name" >
+ </div>
+ </div> 
+ <div class ="row" >
+ <div class ="col1">
+ <label for ="borough">Borough</label>
+ </div>
+ <div class="col2">
+ <select id ="borough" name =" borough">
+ <option value="bronx">Bronx</option>
+ <option value="brooklyn">Brooklyn</option>
+ <option value="queens">Queens</option>
+ <option value="manhattan">Manhattan</option>
+ <option value="staten">Staten Island</option>
+ </select>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col1">
+ <label for="subject">Subject</label>
+ </div>
+ <div class="col2">
+ <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+ </div>
+ </div>
+ <div class="row">
+ <input type="submit" value="Submit">
+ </div>
+ 
+</div>
+ <div class ="FootRow">
+ <div class ="FootCol">
+ <h3>Sidewalk Alerts:</h3>
+ <p><b>Manhattan:</b>
+ <br> 34th street and 7th Ave its icy
+ <br> 60th and Broadway street is also icy
+ <br> <b>Queens:</b>
+ <br> Main Street 37th Ave has black ice very slipper
+ <br> Queens Center Mall north sidewalk blocked due to construction
+ <br> <b> Brooklyn:</b>
+ <br> Sidewalks in front of Atlantic Avenue train station is closed due to construction
+ <br> Fulton Street sidewalks have holes on them
+ <br> <b> Bronx:</b>
+ <br> Lehman College needs to clear snow near gate 13 street side
+ <br> Sidewalks on 161st street and Grand Concourse streets are narrow due to snow piles
+ <br> <b> Staten Island:</b>
+ <br> College Ave sidewalks are covered in ice be careful when walking down this avenue several accidents have already occurred
+ <br> Walker Street is blocked due to construction. You will have to use the street to walk if you do go down this street
+ 
+ 
+ 
+ </p>
+ </div>
+ <div class ="FootCol" id = "map">
+ <h3>NYC Map</h3>
+ <p>
+ <div class="mapouter"><div class="gmap_canvas"><iframe width="650" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=New%20York%20City&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div>
+ </p>
+ </div>
+ </div>
+ </body>
+</html>
